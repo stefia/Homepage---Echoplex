@@ -137,8 +137,7 @@ body {
 
 
 .section__info {
-    padding-top: clamp(110px, calc(5px + 8vw), 72px);
-    padding-bottom: clamp(110px, calc(5px + 8vw), 72px);
+    padding: 72px 0;
 }
 
 .info__title,
@@ -197,6 +196,7 @@ body {
 
 .footer {
     display: flex;
+    flex-wrap: wrap;
     gap: 32px;
 }
 
@@ -227,6 +227,9 @@ body {
         display: flex;
         flex-direction: column-reverse;
         align-items: start;
+    }
+    .section__info {
+        padding: 110;
     }
     .footer__company {
         width: 100%;
