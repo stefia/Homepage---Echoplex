@@ -122,7 +122,7 @@ body {
 }
 
 .promo__content-text {
-    margin-block: clamp(24px, calc(12px + 2vw), 32px);
+    margin: 32px 0;
 }
 
 .promo__content-btns {
@@ -137,7 +137,7 @@ body {
 
 
 .section__info {
-    padding: 78px 0 72px;
+    padding: 108px 0 144px;
 }
 
 .info__title,
@@ -151,8 +151,6 @@ body {
     display: flex;
     flex-wrap: wrap;
     gap: 64px 0;
-    margin-top: clamp(32px, calc(5px + 8vw), 64px);
-    margin-bottom: clamp(36px, calc(5px + 8vw), 72px);
 }
 .info__benefits-item {
     flex: 0 0 25%;
@@ -227,9 +225,6 @@ body {
         display: flex;
         flex-direction: column-reverse;
         align-items: start;
-    }
-    .section__info {
-        padding: 130px 0;
     }
     .footer__company {
         width: 100%;
