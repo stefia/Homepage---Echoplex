@@ -58,7 +58,7 @@ body {
 
 .wrapper {
     width: 100%;
-    max-width: calc(100% - 2 * clamp(10px, 3vw, 72px));
+    max-width: calc(100% - 2 * clamp(16px, 5vw, 72px));
     margin: 0 auto;
 }
 
@@ -137,8 +137,8 @@ body {
 
 
 .section__info {
-    padding-top: clamp(80px, calc(5px + 8vw), 108px);
-    padding-bottom: clamp(48px, calc(5px + 8vw), 72px);
+    padding-top: clamp(64px, calc(5px + 8vw), 72px);
+    padding-bottom: clamp(80px, calc(5px + 8vw), 72px);
 }
 
 .info__title,
