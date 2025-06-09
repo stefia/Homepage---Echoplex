@@ -220,7 +220,7 @@ body {
 }
 @media (max-width: 640px) {
     .section__info {
-        padding: 92px 0 144px;
+        padding-top: 104px;
     }
     .promo__content {
         width: 350px;
