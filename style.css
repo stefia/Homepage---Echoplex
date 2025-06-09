@@ -9,6 +9,7 @@ body {
     font-family: "Be Vietnam Pro", sans-serif;
     background-color: #FFFFFF;
     color: #121826;
+    line-height: 1.5;
 }
 
 :root {
@@ -57,7 +58,7 @@ body {
 
 .wrapper {
     width: 100%;
-    max-width: calc(100% - 2 * clamp(12px, 7vw, 72px));
+    max-width: calc(100% - 2 * clamp(10px, 3vw, 72px));
     margin: 0 auto;
 }
 
@@ -212,7 +213,6 @@ body {
         width: 400px;
     }
     .section__create {
-        height: 100vw;
         background-size: cover;
     }
 }
