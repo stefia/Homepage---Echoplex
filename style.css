@@ -137,7 +137,7 @@ body {
 
 
 .section__info {
-    padding: 72px 0;
+    margin: 72px 0;
 }
 
 .info__title,
@@ -191,7 +191,7 @@ body {
 
 .section__footer {
     background-color: #121826;
-    padding: 24px 0 36px;
+    padding: 24px 0;
 }
 
 .footer {
@@ -229,7 +229,7 @@ body {
         align-items: start;
     }
     .section__info {
-        padding: 110;
+        margin: 120px 0;
     }
     .footer__company {
         width: 100%;
