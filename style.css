@@ -114,7 +114,7 @@ body {
 .promo {
     display: flex;
     align-items: center;
-    gap: 50px;
+    gap: 25px;
 }
 
 .promo__content {
@@ -137,7 +137,7 @@ body {
 
 
 .section__info {
-    padding: 108px 0 144px;
+    padding: 92px 0 144px;
 }
 
 .info__title,
