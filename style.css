@@ -137,7 +137,7 @@ body {
 
 
 .section__info {
-    padding: 84px 0 144px;
+    padding: 78px 0 144px;
 }
 
 .info__title,
@@ -219,6 +219,9 @@ body {
     }
 }
 @media (max-width: 640px) {
+    .section__info {
+        padding: 92px 0 144px;
+    }
     .promo__content {
         width: 350px;
     }
