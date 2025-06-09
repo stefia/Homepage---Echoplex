@@ -203,6 +203,7 @@ body {
 .footer {
     display: flex;
     gap: 32px;
+    margin-bottom: 20px;
 }
 
 .footer__link {
@@ -215,7 +216,9 @@ body {
     .promo__content {
         width: 400px;
     }
-    
+    .section__create {
+        background-size: 200%;
+    }
 }
 @media (max-width: 640px) {
     .promo__content {
@@ -225,9 +228,6 @@ body {
         display: flex;
         flex-direction: column-reverse;
         align-items: start;
-    }
-    .section__create {
-        background-size: 200%;
     }
     .info__title {
         width: 400px;
