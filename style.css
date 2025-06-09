@@ -56,8 +56,8 @@ body {
 
 
 .wrapper {
-    width: calc(100% - 2 * clamp(16px, 7vw, 72px));
-    max-width: 1280px;
+    width: 100%;
+    max-width: calc(100% - 2 * clamp(12px, 7vw, 72px));
     margin: 0 auto;
 }
 
@@ -197,13 +197,12 @@ body {
 
 .section__footer {
     background-color: #121826;
-    padding: 24px 0;
+    padding: 24px 0 36px;
 }
 
 .footer {
     display: flex;
     gap: 32px;
-    margin-bottom: 20px;
 }
 
 .footer__link {
@@ -217,7 +216,13 @@ body {
         width: 400px;
     }
     .section__create {
-        background-size: 200%;
+        height: 100vw;
+        background-size: cover;
+    }
+}
+@media (max-width: 1023px) {
+    .info__benefits-item {
+        flex: 0 0 50%;
     }
 }
 @media (max-width: 640px) {
@@ -231,9 +236,6 @@ body {
     }
     .info__title {
         width: 400px;
-    }
-    .info__benefits-item {
-        flex: 0 0 50%;
     }
     .footer__company {
         width: 100%;
