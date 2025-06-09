@@ -1,0 +1,242 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html { font-size: 16px; }
+
+body {
+    min-height: 100vh;
+    font-family: "Be Vietnam Pro", sans-serif;
+    background-color: #FFFFFF;
+    color: #121826;
+}
+
+:root {
+    --fs-h1: 2.25rem;
+    --fs-h2: 2rem;
+    --fs-label: 1.25rem;
+    --fs-body-text: 1rem;
+    --fs-btn: 1rem;
+    --fw-regular: 400;
+    --fw-bold: 700;
+}
+
+.text--h1 { font-size: var(--fs-h1); }
+.text--h2 { font-size: var(--fs-h2); }
+.text--label { font-size: var(--fs-label); }
+.text--body-text { font-size: var(--fs-body-text); }
+.text--btn { font-size: var(--fs-btn); }
+
+.text--h1,
+.text--h2,
+.text--label,
+.text--btn { font-weight: var(--fw-bold);}
+
+.text--body-text { font-weight: var(--fw-regular); }
+
+.text--white { color: #FFFFFF; }
+.text--blue { color: #4138C2; }
+.text--green { color: #5EC269; } 
+.text--red { color: #E14F62; }
+.text--yellow { color: #E2B53E; }
+.text--orange { color: #E87B35; }
+.text--sky { color: #4E80EE; }
+.text--violet { color: #9D59EF; }
+.text--blue-light { color: #52B3D0; }
+
+.bg--blue { background-color: #C9D2FA; }
+.bg--green { background-color: #E2FBE8; } 
+.bg--red { background-color: #FBE5E6; }
+.bg--yellow { background-color: #FDF9C9; }
+.bg--orange { background-color: #FCEED8; }
+.bg--sky { background-color: #DEE9FC; }
+.bg--violet { background-color: #F1E8FD; }
+.bg--blue-light { background-color: #D5FAF1; }
+
+
+
+.wrapper {
+    width: calc(100% - 2 * clamp(16px, 7vw, 72px));
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+.header {
+    padding-top: clamp(16px, 2vw, 24px);
+    padding-bottom: clamp(16px, 2vw, 24px);
+    display: flex;
+    justify-content: space-between;
+    background-color: #FFFFFF;
+}
+
+.header__logo {
+    width: 32px;
+    height: 32px;
+}
+
+.btn {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    padding: 12px 36px;
+    border-radius: 20px;
+    transition: background .2s;
+}
+
+.btn--white {
+    color: #4138C2;
+    background-color: #FFFFFF;
+    border: 2px solid #9DA3AE50;
+}
+
+.btn--blue {
+    color: #FFFFFF;
+    background-color: #4138C2;
+    border: 2px solid transparent;
+}
+
+.btn--white:hover {
+    background-color: #C9D2FA;
+    border: 2px solid transparent;
+}
+
+.btn--blue:hover {
+    background-color: #0f0872;
+}
+
+
+
+.section__promo {
+    padding-block: clamp(24px, 5vw, 32px);
+}
+
+.promo {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+}
+
+.promo__content {
+    width: 550px;
+}
+
+.promo__content-text {
+    margin-block: clamp(24px, calc(12px + 2vw), 32px);
+}
+
+.promo__content-btns {
+    display: flex;
+    gap: 12px;
+}
+
+.promo__img {
+    width: 100%;
+}
+
+
+
+.section__info {
+    padding-top: clamp(56px, calc(5px + 8vw), 108px);
+    padding-bottom: clamp(36px, calc(5px + 8vw), 72px);
+}
+
+.info__title {
+    width: 350px;
+    text-align: center;
+    margin: 0 auto;
+}
+.info__benefits {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 64px 0;
+    margin-top: clamp(32px, calc(5px + 8vw), 64px);
+    margin-bottom: clamp(36px, calc(5px + 8vw), 72px);
+}
+.info__benefits-item {
+    flex: 0 0 25%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+}
+.info__benefits-label {
+    text-align: center;
+}
+
+.info__benefits-emoji {
+    display: block;
+    width: 72px;
+    height: 72px;
+    padding: 24px;
+    text-align: center;
+    border-radius: 20px;
+}
+
+
+
+.section__create {
+    padding-top: 188px;
+    padding-bottom: 164px;
+    background-image: url(resources/footer_background_image.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: center;
+}
+
+.create__start {
+    width: 320px;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.create__title {
+    margin-bottom: 24px;
+}
+
+
+
+.section__footer {
+    background-color: #121826;
+    padding: 24px 0;
+}
+
+.footer {
+    display: flex;
+    gap: 32px;
+}
+
+.footer__link {
+    text-decoration: none;
+}
+
+
+
+@media (max-width: 1024px) {
+    html { font-size: 15px; }
+    .promo__content {
+        width: 400px;
+    }
+    
+}
+@media (max-width: 640px) {
+    html { font-size: 14px; }
+    .promo__content {
+        width: 480px;
+    }
+    .promo {
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: start;
+    }
+    .section__create {
+        background-size: 200%;
+    }
+    .info__title {
+        width: 300px;
+    }
+    .info__benefits-item {
+        flex: 0 0 50%;
+    }
+}
