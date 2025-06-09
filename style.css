@@ -4,8 +4,6 @@
     box-sizing: border-box;
 }
 
-html { font-size: 16px; }
-
 body {
     min-height: 100vh;
     font-family: "Be Vietnam Pro", sans-serif;
@@ -119,7 +117,7 @@ body {
 }
 
 .promo__content {
-    width: 550px;
+    width: 600px;
 }
 
 .promo__content-text {
@@ -143,7 +141,7 @@ body {
 }
 
 .info__title {
-    width: 350px;
+    width: 430px;
     text-align: center;
     margin: 0 auto;
 }
@@ -186,7 +184,7 @@ body {
 }
 
 .create__start {
-    width: 320px;
+    width: 400px;
     text-align: center;
     margin: 0 auto;
 }
@@ -211,19 +209,19 @@ body {
     text-decoration: none;
 }
 
-
+.footer__company {
+    width: 100%;
+}
 
 @media (max-width: 1024px) {
-    html { font-size: 15px; }
     .promo__content {
         width: 400px;
     }
     
 }
 @media (max-width: 640px) {
-    html { font-size: 14px; }
     .promo__content {
-        width: 480px;
+        width: 350px;
     }
     .promo {
         display: flex;
@@ -234,7 +232,7 @@ body {
         background-size: 200%;
     }
     .info__title {
-        width: 300px;
+        width: 400px;
     }
     .info__benefits-item {
         flex: 0 0 50%;
