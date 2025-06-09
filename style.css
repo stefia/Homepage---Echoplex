@@ -137,8 +137,8 @@ body {
 
 
 .section__info {
-    padding-top: clamp(64px, calc(5px + 8vw), 72px);
-    padding-bottom: clamp(80px, calc(5px + 8vw), 72px);
+    padding-top: clamp(110px, calc(5px + 8vw), 72px);
+    padding-bottom: clamp(110px, calc(5px + 8vw), 72px);
 }
 
 .info__title,
@@ -162,6 +162,7 @@ body {
     align-items: center;
     gap: 24px;
 }
+
 .info__benefits-label {
     text-align: center;
 }
@@ -180,10 +181,7 @@ body {
 .section__create {
     padding-top: 188px;
     padding-bottom: 188px;
-    background-image: url(resources/footer_background_image@2x.png);
-    background-repeat: no-repeat;
-    background-size: 100%;
-    background-position: center;
+    background: url(resources/footer_background_image@2x.png) center/cover no-repeat;
 }
 
 .create__title {
