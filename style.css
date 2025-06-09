@@ -136,8 +136,8 @@ body {
 
 
 .section__info {
-    padding-top: clamp(56px, calc(5px + 8vw), 108px);
-    padding-bottom: clamp(36px, calc(5px + 8vw), 72px);
+    padding-top: clamp(80px, calc(5px + 8vw), 108px);
+    padding-bottom: clamp(48px, calc(5px + 8vw), 72px);
 }
 
 .info__title {
@@ -176,8 +176,8 @@ body {
 
 .section__create {
     padding-top: 188px;
-    padding-bottom: 164px;
-    background-image: url(resources/footer_background_image.png);
+    padding-bottom: 188px;
+    background-image: url(resources/footer_background_image@2x.png);
     background-repeat: no-repeat;
     background-size: 100%;
     background-position: center;
@@ -209,9 +209,7 @@ body {
     text-decoration: none;
 }
 
-.footer__company {
-    width: 100%;
-}
+
 
 @media (max-width: 1024px) {
     .promo__content {
@@ -236,5 +234,8 @@ body {
     }
     .info__benefits-item {
         flex: 0 0 50%;
+    }
+    .footer__company {
+        width: 100%;
     }
 }
