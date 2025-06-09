@@ -137,7 +137,7 @@ body {
 
 
 .section__info {
-    padding: 72px 0;
+    padding: 78px 0 72px;
 }
 
 .info__title,
@@ -229,7 +229,7 @@ body {
         align-items: start;
     }
     .section__info {
-        padding: 170px 0;
+        padding: 130px 0;
     }
     .footer__company {
         width: 100%;
