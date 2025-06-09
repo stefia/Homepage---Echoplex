@@ -140,8 +140,10 @@ body {
     padding-bottom: clamp(48px, calc(5px + 8vw), 72px);
 }
 
-.info__title {
-    width: 430px;
+.info__title,
+.create__start {
+    width: 100%;
+    max-width: 430px;
     text-align: center;
     margin: 0 auto;
 }
@@ -181,12 +183,6 @@ body {
     background-repeat: no-repeat;
     background-size: 100%;
     background-position: center;
-}
-
-.create__start {
-    width: 400px;
-    text-align: center;
-    margin: 0 auto;
 }
 
 .create__title {
@@ -233,9 +229,6 @@ body {
         display: flex;
         flex-direction: column-reverse;
         align-items: start;
-    }
-    .info__title {
-        width: 400px;
     }
     .footer__company {
         width: 100%;
