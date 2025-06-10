@@ -140,7 +140,7 @@ body {
 }
 
 .promo__content {
-    width: clamp(350px, 54.7vw, 600px);
+    width: 600px;
 }
 
 .promo__content-text {
@@ -242,6 +242,9 @@ body {
 @media (max-width: 640px) {
     .section__info {
         padding-top: 104px;
+    }
+    .promo__content {
+        width: 350px;
     }
     .promo {
         flex-direction: column-reverse;
