@@ -7,9 +7,9 @@
 body {
     min-height: 100vh;
     font-family: "Be Vietnam Pro", sans-serif;
-    background-color: #FFFFFF;
-    color: #121826;
     line-height: 1.5;
+    background-color: #FFFFFF;
+    color: var(--fc-blue-dark);
 }
 
 :root {
@@ -20,6 +20,26 @@ body {
     --fs-btn: 1rem;
     --fw-regular: 400;
     --fw-bold: 700;
+    --fc-white: #FFFFFF;
+    --fc-blue: #4138C2;
+    --fc-green: #5EC269;
+    --fc-red: #E14F62;
+    --fc-yellow: #E2B53E;
+    --fc-orange: #E87B35;
+    --fc-sky: #4E80EE;
+    --fc-violet: #9D59EF;
+    --fc-blue-light: #52B3D0;
+    --fc-blue-dark: #121826;
+    --bg-blue-bright: #4138C2;
+    --bg-blue: #C9D2FA;
+    --bg-green: #E2FBE8;
+    --bg-red: #FBE5E6;
+    --bg-yellow: #FDF9C9;
+    --bg-orange: #FCEED8;
+    --bg-sky: #DEE9FC;
+    --bg-violet: #F1E8FD;
+    --bg-blue-light: #D5FAF1;
+    --bg-white: #FFFFFF;
 }
 
 .text--h1 { font-size: var(--fs-h1); }
@@ -32,28 +52,29 @@ body {
 .text--h2,
 .text--label,
 .text--btn { font-weight: var(--fw-bold);}
-
 .text--body-text { font-weight: var(--fw-regular); }
 
-.text--white { color: #FFFFFF; }
-.text--blue { color: #4138C2; }
-.text--green { color: #5EC269; } 
-.text--red { color: #E14F62; }
-.text--yellow { color: #E2B53E; }
-.text--orange { color: #E87B35; }
-.text--sky { color: #4E80EE; }
-.text--violet { color: #9D59EF; }
-.text--blue-light { color: #52B3D0; }
+.text--white { color: var(--fc-white); }
+.text--blue { color: var(--fc-blue); }
+.text--green { color: var(--fc-green); } 
+.text--red { color: var(--fc-red); }
+.text--yellow { color: var(--fc-yellow); }
+.text--orange { color: var(--fc-orange); }
+.text--sky { color: var(--fc-sky); }
+.text--violet { color: var(--fc-violet); }
+.text--blue-light { color: var(--fc-blue-light); }
+.text--blue-dark { color: var(--fc-blue-dark);}
 
-.bg--blue { background-color: #C9D2FA; }
-.bg--green { background-color: #E2FBE8; } 
-.bg--red { background-color: #FBE5E6; }
-.bg--yellow { background-color: #FDF9C9; }
-.bg--orange { background-color: #FCEED8; }
-.bg--sky { background-color: #DEE9FC; }
-.bg--violet { background-color: #F1E8FD; }
-.bg--blue-light { background-color: #D5FAF1; }
-
+.bg--blue-bright {background-color: var(--bg-blue-bright);}
+.bg--blue { background-color: var(--bg-blue); }
+.bg--green { background-color: var(--bg-green); } 
+.bg--red { background-color: var(--bg-red); }
+.bg--yellow { background-color: var(--bg-yellow); }
+.bg--orange { background-color: var(--bg-orange); }
+.bg--sky { background-color: var(--bg-sky); }
+.bg--violet { background-color: var(--bg-violet); }
+.bg--blue-light { background-color: var(--bg-blue-light); }
+.bg--white { background-color: var(--bg-white); }
 
 
 .wrapper {
@@ -67,7 +88,7 @@ body {
     padding-bottom: clamp(16px, 2vw, 24px);
     display: flex;
     justify-content: space-between;
-    background-color: #FFFFFF;
+    background-color: var(--bg-white);
 }
 
 .header__logo {
@@ -85,19 +106,19 @@ body {
 }
 
 .btn--white {
-    color: #4138C2;
-    background-color: #FFFFFF;
+    color: var(--fc-blue);
+    background-color: var(--bg-white);
     border: 2px solid #9DA3AE50;
 }
 
 .btn--blue {
-    color: #FFFFFF;
-    background-color: #4138C2;
+    color: var(--fc-white);
+    background-color: var(--bg-blue-bright);
     border: 2px solid transparent;
 }
 
 .btn--white:hover {
-    background-color: #C9D2FA;
+    background-color: var(--bg-blue);
     border: 2px solid transparent;
 }
 
@@ -113,12 +134,13 @@ body {
 
 .promo {
     display: flex;
+    justify-content: center;
     align-items: center;
     gap: 25px;
 }
 
 .promo__content {
-    width: 600px;
+    width: clamp(350px, 54.7vw, 600px);
 }
 
 .promo__content-text {
@@ -177,8 +199,7 @@ body {
 
 
 .section__create {
-    padding-top: 188px;
-    padding-bottom: 188px;
+    padding: 188px 0;
     background: url(resources/footer_background_image@2x.png) center/cover no-repeat;
 }
 
@@ -189,7 +210,7 @@ body {
 
 
 .section__footer {
-    background-color: #121826;
+    background-color: var(--fc-blue-dark);
     padding: 24px 0;
 }
 
@@ -222,11 +243,7 @@ body {
     .section__info {
         padding-top: 104px;
     }
-    .promo__content {
-        width: 350px;
-    }
     .promo {
-        display: flex;
         flex-direction: column-reverse;
         align-items: start;
     }
